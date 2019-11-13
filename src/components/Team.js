@@ -31,6 +31,11 @@ class Team extends React.Component{
       })
     }))
   }
+  handleSubmit(event){
+    event.preventDefault();
+    console.log('heard')
+
+  }
     render(){
      return(
        <div>
@@ -47,6 +52,8 @@ class Team extends React.Component{
        contacts={this.state.contacts}
        onDeleteContact={this.removeContact}
        />
+       
+      
        </div>
       )
     }

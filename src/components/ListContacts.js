@@ -1,6 +1,7 @@
 import React from 'react';
 import { Container, Row, Col } from 'reactstrap';
 
+
 /* eslint-disable */
 function ListContact (props){
         return(
@@ -30,7 +31,14 @@ function ListContact (props){
             <Row>
                 <div className='AddMore'>
                     <a href="#">Add More</a>
+                    
                 </div>
+                <form>
+                    <p>Name: <input type="text" /></p>
+                    <p>Profile: <input type="text" /></p>
+                    <button type="submit">Click</button>
+                </form>
+                    
             </Row>
         </Container>
         )
