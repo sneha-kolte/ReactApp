@@ -1,4 +1,4 @@
-import React, {Component} from 'react';
+import React from 'react';
 import ListContacts from './ListContacts'
 /* eslint-disable */
 class Team extends React.Component{
@@ -31,10 +31,8 @@ class Team extends React.Component{
       })
     }))
   }
-  handleSubmit(event){
-    event.preventDefault();
-    console.log('heard')
-
+  handleSubmit(e){
+    e.preventDefault();
   }
     render(){
      return(
@@ -51,6 +49,11 @@ class Team extends React.Component{
        <ListContacts 
        contacts={this.state.contacts}
        onDeleteContact={this.removeContact}
+       />
+
+       <ListContacts 
+       contacts={this.state.contacts}
+       addMember={this.handleSubmit}
        />
        
       

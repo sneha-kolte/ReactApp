@@ -6,6 +6,7 @@ import './index.css';
 import About from './components/About'
 import Contact from './components/Contact'
 import Team from './components/Team'
+// import AddMember from './components/AddMember'
 
 const routing = (
   <Router>  
@@ -27,7 +28,11 @@ const routing = (
         </li> 
         <li>  
           <Link to="/contact">Contact</Link>  
-        </li>  
+        </li>
+        {/* <li>  
+          <Link to="/addmember">AddMember</Link>  
+        </li> */}
+        
       </ul>
       <ul className='nav navbar-nav navbar-right'>
       <li><a href="#"><span className='glyphicon glyphicon-user'></span> Sign Up</a></li>
@@ -39,6 +44,7 @@ const routing = (
       <Route path="/about" component={About}/>
       <Route path="/team" component={Team}/>
       <Route path="/contact" component={Contact}/>
+      {/* <Route path="/add-member" component={AddMember}/> */}
    </div> 
    </Router>
 )
